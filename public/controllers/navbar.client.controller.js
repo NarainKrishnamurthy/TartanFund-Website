@@ -1,4 +1,4 @@
-var navbarController = function($scope, $http, currentView){
+var navbarController = function($scope, $http, currentView, $window){
 	$scope.menuItems = [];
     
     function getMenuItems (visibility){
@@ -16,6 +16,7 @@ var navbarController = function($scope, $http, currentView){
 	$scope.setView = function(templateURL){
 		currentView.templateURL = templateURL;
 		console.log(currentView.templateURL);
+		$window.scrollTo(0,0);
 	};
 
 };

@@ -1,0 +1,10 @@
+{
+   "public": [
+      {"displayName" : "Home", "templateURL":"/views/home.html"},
+      {"displayName" : "About", "templateURL":"/views/about.html"},
+      {"displayName" : "Positions", "templateURL":"/views/positions.html"},
+      {"displayName" : "Application", "templateURL":"/views/application.html"},
+      {"displayName" : "Calendar", "templateURL":"/views/calendar.html"},
+      {"displayName" : "Contact", "templateURL":"/views/contact.html"}
+      ]
+}

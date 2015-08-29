@@ -1,8 +1,8 @@
 var navbarController = function($scope, $http, currentView, $window){
 	$scope.menuItems = [];
     
-    function getMenuItems (visibility){
-		$http.get('/config/navbar.client.config.json').
+    function getMenuItems (visibility, configURL){
+		$http.get(configURL).
 		  success(function(data, status, headers, config) {
 		    console.log(data);
             $scope.menuItems = data[visibility];
@@ -11,12 +11,14 @@ var navbarController = function($scope, $http, currentView, $window){
 		   	console.log('unable to get navbar items');
 		  });
 	};
-	getMenuItems('public');
 
 	$scope.setView = function(templateURL){
 		currentView.templateURL = templateURL;
 		console.log(currentView.templateURL);
 		$window.scrollTo(0,0);
 	};
+
+	//Intialization code. Maybe put this in a run block?
+	getMenuItems('public', '/config/navbar.client.config.json');
 
 };

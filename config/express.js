@@ -41,7 +41,7 @@ module.exports = function() {
 	app.set('view engine', 'ejs');
 
 	// Load the routing files
-	require('../app/routes/menuItems.server.routes.js')(app);
+	require('../app/routes/members.server.routes.js')(app);
 
 	// Configure static file serving
 	app.use(express.static('./public'));

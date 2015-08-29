@@ -1,0 +1,11 @@
+<div class="container-fluid viewOffset whiteback" ng-controller="membersController">
+    <h1 class="text-center">Members</h1>
+    <div class="row" ng-repeat="(setName, members) in memberSets">
+        <div class="col-sm-8 col-sm-offset-2 open_sans">
+            {{setName}}
+            <ul>
+                <li ng-repeat="x in members">{{x.firstName}} {{x.lastName}}</li>
+            </ul>           
+        </div>
+    </div>
+</div>

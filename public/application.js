@@ -6,3 +6,4 @@ tartanFundApp.factory("currentView", currentViewService);
 //Registering controllers
 tartanFundApp.controller('navbarController', ['$scope', '$http', 'currentView', '$window', navbarController]);
 tartanFundApp.controller('currentViewController', ['$scope', '$http', 'currentView', currentViewController]);
+tartanFundApp.controller('membersController', ['$scope', '$http', membersController]);

@@ -10,7 +10,7 @@ module.exports = function() {
 	// Use Mongoose to connect to MongoDB
 	var db = mongoose.connect(config.db);
 
-	require('../app/models/menuitem.server.model');
+	require('../app/models/member.server.model');
 
 	// Return the Mongoose connection instance
 	return db;

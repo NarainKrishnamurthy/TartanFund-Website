@@ -3,8 +3,7 @@
       {"displayName" : "About", "templateURL":"/view/about.html"},
       {"displayName" : "Positions", "templateURL":"/view/positions.html"},
       {"displayName" : "Application", "templateURL":"/view/application.html"},
-      {"displayName" : "Calendar", "templateURL":"/view/calendar.html"}
-      {"displayName" : "Contact", "templateURL":"/view/contact.html"},
-      {
+      {"displayName" : "Calendar", "templateURL":"/view/calendar.html"},
+      {"displayName" : "Contact", "templateURL":"/view/contact.html"}
       ]
 }

@@ -1,12 +1,11 @@
 var membersController = function($scope, $http, membersConfig){
     $scope.membersConfig = membersConfig;
     $scope.displayedMember; 
-    
-    
+
     $scope.openModal = function(member, modalID){
       $scope.displayedMember = angular.copy(member);
       console.log($scope.displayedMember);
       console.log(modalID)
-      $('#' + modalID).modal('show');
+      $(modalID).modal('show');
     }
 };

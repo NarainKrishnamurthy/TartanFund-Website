@@ -24,6 +24,7 @@ var MemberSchema = new Schema({
         type: String,
         match: /.+\@.+\..+/
     },
+    position: String,
     resumeURL: String,
     fullTime: String,
     internship: String

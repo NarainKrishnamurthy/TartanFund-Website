@@ -5,7 +5,7 @@
 
 html,body {
     height:100%;
-    background-color: #f6f6f6;
+    background:center no-repeat fixed url('../img/trading_floor.jpg');
     background-size: cover;
     font-family: 'Lato', sans-serif;
 }
@@ -250,7 +250,7 @@ padding-top: 100%;
 }
 
 .viewOffset {
-  margin-top: 5%;
+  margin-top: 2.5%;
   height: 90vh;
 }
 

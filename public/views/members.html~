@@ -1,24 +1,16 @@
 <div class="container-fluid viewOffset whiteback" ng-controller="membersController">
-   
-   <div class="row">
-        <div class="col-md-8 col-md-ofset-2 open_sans">
-           <h2>Members</h2>
-        </div>
-    </div>
+    <h1 class="text-center">Members</h1>
     <div class="row">
-        <div class="col-md-8 col-md-ofset-2 open_sans">
+        <div class="col-md-10 col-md-ofset-3 open_sans">
             <tabset>
                 <tab ng-repeat="(setName, members) in membersConfig.members" 
-                heading="{{setName}}" active="true">
-                    <div class="col-sm-3 open_sans" ng-repeat="x in members track by $index" style="text-align: center;">
+                heading="{{setName}}">
+                    <div class="col-sm-3 open_sans" ng-repeat="x in members track by $index">
                       <br/>
-                      <img src="{{x.profilePicURL}}" style="width: 150px; height:120px" ></img><br/>
-                      <h4><b>{{x.firstName}} {{x.lastName === "TBD" ? '' : x.lastName}}</b></h4>
-                      <i>{{x.position}}</i>
+                      <img src="{{x.profilePicURL}}" style="width: 150px; height:120px" ng-click="openModal(x, 'memberModal')"></img><br/>
+                      {{x.firstName}} {{x.lastName}}
                     </div>
                 </tab>
-                <tab heading="Assistant Portfolio Managers"><br/>Coming Soon</tab>
-                <tab heading="Investment Analysts"><br/>Coming Soon</tab>
             </tabset>
         </div>
     </div>
@@ -34,7 +26,7 @@
                      <img src="{{displayedMember.profilePicURL}}" style="width: 180px; height: 140px"></img>
                   </div>
                   <div class="col-md-6">
-                     Position: {{displayedMember.position}} <br/>
+                     Gradution Year: {{displayedMember.graduationYear}} <br/>
                      Email: {{displayedMember.email}} <br/>
                      Full-Time: {{displayedMember.fullTime || 'TBA'}} <br/>
                      Internship: {{displayedMember.internship || 'TBA'}} <br/>

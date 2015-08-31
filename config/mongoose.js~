@@ -8,7 +8,7 @@ var config = require('./config'),
 // Define the Mongoose configuration method
 module.exports = function() {
 	// Use Mongoose to connect to MongoDB
-	var db = mongoose.connect(config.db);
+	var db = mongoose.connect(process.env.MONGOLAB_URI);
 
 	require('../app/models/member.server.model');
 

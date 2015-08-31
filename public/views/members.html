@@ -1,12 +1,12 @@
-<div class="container-fluid viewOffset whiteback" ng-controller="membersController">
+<div class="container-fluid viewOffset" ng-controller="membersController">
    
    <div class="row">
-        <div class="col-md-8 col-md-ofset-2 open_sans">
-           <h2>Members</h2>
+        <div class="col-md-9 col-md-offset-1 open_sans">
+           <h2 >Members<hr /></h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 col-md-ofset-2 open_sans">
+        <div class="col-md-9 col-md-offset-1 open_sans">
             <tabset>
                 <tab ng-repeat="(setName, members) in membersConfig.members" 
                 heading="{{setName}}" active="true">

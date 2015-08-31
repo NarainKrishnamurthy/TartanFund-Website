@@ -28,10 +28,19 @@
         </div>
     </nav> 
     
+    <div id="wrapper">
     <!-- Wrapper for the current displayed view -->
-    <div ng-controller="currentViewController">
-        <ng-include src="view.templateURL"></ng-include>
+        <div id="content">
+            <div ng-controller="currentViewController">
+                <ng-include src="view.templateURL"></ng-include>
+            </div>
+        </div>
+        <div id="footer">
+            <br/><br/>
+            <div style="text-align: center"><p>Tartan Student Fund © 2015</p></div>
+        </fdiv>
     </div>
+
     <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
 

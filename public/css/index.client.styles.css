@@ -14,7 +14,7 @@ html,body {
 
 @media (min-width:768px) {
     h1 {
-        font-size:68px;
+        font-size:50px;
     }
 }
 
@@ -209,7 +209,7 @@ footer .nav>li>a:hover {
 iframe {
   float: center;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
 
 .circle {
@@ -354,13 +354,13 @@ hr {
   padding:10px;
 }
 #content {
-  padding-bottom:100px; /* Height of the footer element */
+  padding-bottom:20vh; /* Height of the footer element */
 }
 #footer {
   background:#212121;
   color: #888888;
   width:100%;
-  height:100px;
+  height:15vh;
   position:absolute;
   bottom:0;
   left:0;

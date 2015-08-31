@@ -30,11 +30,11 @@ module.exports = function() {
 	app.use(methodOverride());
 
 	// Configure the 'session' middleware
-	app.use(session({
-		saveUninitialized: true,
-		resave: true,
-		secret: config.sessionSecret
-	}));
+	//app.use(session({
+	//	saveUninitialized: true,
+	//	resave: true,
+	//	secret: config.sessionSecret
+	//}));
 
 	// Set the application view engine and 'views' folder
 	app.set('views', './app/views');

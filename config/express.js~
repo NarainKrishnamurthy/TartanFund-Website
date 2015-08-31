@@ -30,19 +30,18 @@ module.exports = function() {
 	app.use(methodOverride());
 
 	// Configure the 'session' middleware
-	app.use(session({
-		saveUninitialized: true,
-		resave: true,
-		secret: config.sessionSecret
-	}));
+	//app.use(session({
+	//	saveUninitialized: true,
+	//	resave: true,
+	//	secret: config.sessionSecret
+	//}));
 
 	// Set the application view engine and 'views' folder
 	app.set('views', './app/views');
 	app.set('view engine', 'ejs');
 
 	// Load the routing files
-	require('../app/routes/index.server.routes.js')(app);
-	require('../app/routes/menuItems.server.routes.js')(app);
+	require('../app/routes/members.server.routes.js')(app);
 
 	// Configure static file serving
 	app.use(express.static('./public'));

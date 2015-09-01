@@ -309,6 +309,10 @@ hr {
   border:2px solid #021a40;
 }
 
+.about-logo{
+  padding:2px;
+  border:2px solid #021a40;
+}
 .carousel-text {
   color: #ffd;
   font-weight: bold;
@@ -317,6 +321,7 @@ hr {
 
 .carousel-caption{
   background-color: rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
 }
 
 .carousel-shade{

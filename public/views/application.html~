@@ -1,8 +1,10 @@
 <div class="container-fluid viewOffset">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 open_sans">
-            <h2 >Application<hr /></h2>
-            <iframe src="https://docs.google.com/forms/d/1GCoE8du5-ubEsw6zlaZ2dtyaARjvo3yfSLrhKyR_e0o/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+           <h2 >Application<hr /></h2>
+           <div style="height=800px;">
+            <iframe src="https://docs.google.com/forms/d/1GCoE8du5-ubEsw6zlaZ2dtyaARjvo3yfSLrhKyR_e0o/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" class="application_iframe">Loading...</iframe>
+         </div>
         </div>
     </div>
 </div>

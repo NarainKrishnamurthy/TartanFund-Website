@@ -212,6 +212,10 @@ iframe {
   height: 60vh;
 }
 
+.application_iframe {
+   height: 1750px;
+}
+
 .circle {
 margin-left: auto;
 margin-right: auto;

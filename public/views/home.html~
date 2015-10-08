@@ -1,7 +1,7 @@
 <div class="container-fluid viewOffset">
     <br/><br/>
     <div class="row">
-        <div class="col-md-13 open_sans" >
+        <div class="col-md-12 open_sans" >
             <carousel interval="4000" class="carousel">
                 <slide>
                     <img ng-src="img/Carousel_Skyline.jpg">

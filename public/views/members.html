@@ -9,7 +9,7 @@
         <div class="col-md-9 col-md-offset-1 open_sans">
             <tabset>
                 <tab ng-repeat="(setName, members) in membersConfig.members" 
-                heading="{{setName}}" active="true">
+                heading="{{setName.split('-')[1]}}">
                     <div class="col-sm-3 open_sans" ng-repeat="x in members track by $index" style="text-align: center;">
                       <br/>
                       <img src="{{x.profilePicURL}}" style="width: 150px; height:120px" ></img><br/>
@@ -17,8 +17,6 @@
                       <i>{{x.position}}</i>
                     </div>
                 </tab>
-                <tab heading="Assistant Portfolio Managers"><br/>Coming Soon</tab>
-                <tab heading="Investment Analysts"><br/>Coming Soon</tab>
             </tabset>
         </div>
     </div>

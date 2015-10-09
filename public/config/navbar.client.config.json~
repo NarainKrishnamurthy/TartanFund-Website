@@ -4,7 +4,7 @@
       {"displayName" : "About", "templateURL":"/views/about.html"},
       {"displayName" : "Members", "templateURL": "/views/members.html"},
       {"displayName" : "Positions", "templateURL":"/views/positions.html"},
-      {"displayName" : "Pitches", "templateURL":"/views/pitches.html"},
+      {"displayName" : "Pitch Calendar", "templateURL":"/views/pitch_calendar.html"},
       {"displayName" : "Calendar", "templateURL":"/views/calendar.html"},
       {"displayName" : "Contact", "templateURL":"/views/contact.html"}
       ]

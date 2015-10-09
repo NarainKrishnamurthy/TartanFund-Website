@@ -13,7 +13,7 @@
                     <div class="col-sm-3 open_sans" ng-repeat="x in members track by $index" style="text-align: center;">
                       <br/>
                       <img src="{{x.profilePicURL}}" style="width: 150px; height:120px" ></img><br/>
-                      <h4><b>{{x.firstName}} {{x.lastName === "TBD" ? '' : x.lastName}}</b></h4>
+                      <h4><b>{{x.firstName}} {{ x.lastName}}</b></h4>
                       <i>{{x.position}}</i>
                     </div>
                 </tab>

@@ -1,0 +1,16 @@
+<div class="container-fluid viewOffset">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1  open_sans">
+                <h2 >Pitch Calendar<hr /></h2>
+                <p>
+                Coming soon!
+               </p>
+            </div>
+        </div>
+        <div class="row">
+           <br/><br/>
+           <div class="col-md-10 col-md-offset-1  open_sans" style="text-align: center;"> 
+               <img src="img/tepper_logo_1.jpg" class="about-logo">
+            </div>
+        </div>
+</div>
